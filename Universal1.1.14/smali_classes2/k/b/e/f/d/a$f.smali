@@ -1,0 +1,173 @@
+.class public final Lk/b/e/f/d/a$f;
+.super Lcom/google/protobuf/GeneratedMessage;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lk/b/e/f/d/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "f"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lk/b/e/f/d/a$f$a;
+    }
+.end annotation
+
+
+# instance fields
+.field private a:Z
+
+.field private b:Ljava/lang/String;
+
+.field private c:Z
+
+.field private d:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk/b/e/f/d/a$f;
+
+    invoke-direct {v0}, Lk/b/e/f/d/a$f;-><init>()V
+
+    invoke-static {}, Lk/b/e/f/d/a;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    invoke-static {}, Lk/b/e/f/d/a;->b()V
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
+
+    const-string v0, ""
+
+    iput-object v0, p0, Lk/b/e/f/d/a$f;->b:Ljava/lang/String;
+
+    iput-object v0, p0, Lk/b/e/f/d/a$f;->d:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lk/b/e/f/d/a$a;)V
+    .locals 0
+
+    invoke-direct {p0}, Lk/b/e/f/d/a$f;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic a(Lk/b/e/f/d/a$f;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lk/b/e/f/d/a$f;->a:Z
+
+    return p1
+.end method
+
+.method static synthetic b(Lk/b/e/f/d/a$f;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    iput-object p1, p0, Lk/b/e/f/d/a$f;->b:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic c(Lk/b/e/f/d/a$f;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lk/b/e/f/d/a$f;->c:Z
+
+    return p1
+.end method
+
+.method static synthetic d(Lk/b/e/f/d/a$f;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    iput-object p1, p0, Lk/b/e/f/d/a$f;->d:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method public static i()Lk/b/e/f/d/a$f$a;
+    .locals 1
+
+    invoke-static {}, Lk/b/e/f/d/a$f$a;->b()Lk/b/e/f/d/a$f$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static j(Lk/b/f/a;)Lk/b/e/f/d/a$f;
+    .locals 1
+
+    invoke-static {}, Lk/b/e/f/d/a$f;->i()Lk/b/e/f/d/a$f$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lk/b/e/f/d/a$f$a;->mergeFrom(Lk/b/f/a;)Lcom/google/protobuf/AbstractMessage$Builder;
+
+    move-result-object p0
+
+    check-cast p0, Lk/b/e/f/d/a$f$a;
+
+    invoke-static {p0}, Lk/b/e/f/d/a$f$a;->a(Lk/b/e/f/d/a$f$a;)Lk/b/e/f/d/a$f;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public e()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lk/b/e/f/d/a$f;->d:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public f()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lk/b/e/f/d/a$f;->b:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public g()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lk/b/e/f/d/a$f;->c:Z
+
+    return v0
+.end method
+
+.method public final h()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lk/b/e/f/d/a$f;->a:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    return v0
+.end method
