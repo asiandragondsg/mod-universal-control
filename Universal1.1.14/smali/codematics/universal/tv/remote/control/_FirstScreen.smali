@@ -2814,21 +2814,21 @@
     invoke-direct {p0}, Lcodematics/universal/tv/remote/control/_FirstScreen;->m()V
 
     :cond_7
-    const p1, 0x7f0b0318
+    # const p1, 0x7f0b0318
 
-    invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    # invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
-    move-result-object p1
+    # move-result-object p1
 
-    check-cast p1, Landroid/widget/RelativeLayout;
+    # check-cast p1, Landroid/widget/RelativeLayout;
 
-    iput-object p1, p0, Lcodematics/universal/tv/remote/control/_FirstScreen;->S0:Landroid/widget/RelativeLayout;
+    # iput-object p1, p0, Lcodematics/universal/tv/remote/control/_FirstScreen;->S0:Landroid/widget/RelativeLayout;
 
-    new-instance v0, Lcodematics/universal/tv/remote/control/_FirstScreen$k;
+    # new-instance v0, Lcodematics/universal/tv/remote/control/_FirstScreen$k;
 
-    invoke-direct {v0, p0}, Lcodematics/universal/tv/remote/control/_FirstScreen$k;-><init>(Lcodematics/universal/tv/remote/control/_FirstScreen;)V
+    # invoke-direct {v0, p0}, Lcodematics/universal/tv/remote/control/_FirstScreen$k;-><init>(Lcodematics/universal/tv/remote/control/_FirstScreen;)V
 
-    invoke-virtual {p1, v0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    # invoke-virtual {p1, v0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const p1, 0x7f0b0319
 
